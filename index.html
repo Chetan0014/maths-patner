@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculas Problem Solver</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <div class="main">
+      <h1>Adavnced Maths Problem Solver</h1>
+        <label for="expression">Enter the input</label>
+        <input type="text" id="expression" placeholder="Search"/>
+        <select name="category" id="category">
+            <option value="simplify">Simplify</option>
+            <option value="factor">Factor</option>
+            <option value="derive">Derive</option>
+            <option value="integrate">Integrate</option>
+            <option value="zeroes">Find 0's</option>
+            <option value="tangent">Find Tangent</option>
+            <option value="area">Area Under Curve</option>
+            <option value="cos">Cosine</option>
+            <option value="sin">Sine</option>
+            <option value="tan">Tangent</option>
+            <option value="arccos">Inverse Cosine</option>
+
+            <option value="arcsin">Inverse Sine</option>
+            <option value="arctan">Inverse Tangent</option>
+            <option value="abs">Absolute Value</option>
+            <option value="log">Logarithm</option>
+          </select>
+          <button onclick="display()">Answer</button>
+          <button onclick="displayHistory()">History</button>
+          <button onclick="deleteHistory()">Delete</button>
+          <div class="display">
+            <p class="text"></p>
+            <p class="answer"></p>
+          </div>
+
+          <div class="historyDisplay">
+
+          </div>
+    </div>
+</body>
+</html>
+<script src="App.js">
+</script>
+
+
